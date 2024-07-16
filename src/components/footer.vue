@@ -3,7 +3,7 @@ export default {};
 </script>
 
 <template>
-  <footer>
+  <footer class="my_mt3">
     <div class="grid">
       <div class="my-col">
         <h4 class="text-white normal-text">Lorem, ipsum.</h4>

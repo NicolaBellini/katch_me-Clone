@@ -4,7 +4,7 @@ import Hero from "../components/hero.vue";
 import Poster from "../components/poster.vue";
 import Grid from "../components/grid.vue";
 import Flickity from "../components/flickity.vue";
-import Offers from "../components/offers.vue";
+import PosterInvert from "../components/posterInvert.vue";
 
 export default {
   components: {
@@ -13,7 +13,7 @@ export default {
     BgCover,
     Grid,
     Flickity,
-    Offers,
+    PosterInvert,
   },
 };
 </script>
@@ -24,6 +24,6 @@ export default {
   <BgCover />
   <Grid />
   <Flickity />
-  <Offers />
+  <PosterInvert />
 </template>
 <style></style>

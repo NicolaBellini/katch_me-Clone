@@ -1,13 +1,25 @@
 <script>
-export default {};
+import ScrollReveal from "scrollreveal";
+export default {
+  mounted() {
+    ScrollReveal().reveal(".reveal", {
+      origin: "bottom",
+      distance: "50px",
+      duration: 1000,
+      delay: 500,
+      easing: "cubic-bezier(0.215, 0.61, 0.355, 1)",
+      interval: 600,
+    });
+  },
+};
 </script>
 
 <template>
   <div class="bg-cover text-white my_mt3">
-    <div class="bg-cover-title">
+    <div class="bg-cover-title reveal">
       <h3 class="big-text">titolo blocco cover</h3>
     </div>
-    <div class="bg-cover-text">
+    <div class="bg-cover-text reveal">
       <h4 class="normal-text">titolo paragrafo</h4>
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam
@@ -38,7 +50,6 @@ export default {};
 
 <style lang="scss" scoped>
 .bg-cover {
-  border: 1px solid red;
   display: flex;
   padding: 100px 0;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),

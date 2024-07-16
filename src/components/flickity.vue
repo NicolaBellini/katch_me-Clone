@@ -1,6 +1,18 @@
 <script>
 import { flickity } from "flickity";
-export default {};
+import ScrollReveal from "scrollreveal";
+
+export default {
+  mounted() {
+    ScrollReveal().reveal(".zoom", {
+      duration: 1000,
+      easing: "cubic-bezier(0.215, 0.61, 0.355, 1)",
+      interval: 200,
+      scale: 0.65,
+      mobile: false,
+    });
+  },
+};
 </script>
 
 <template>
@@ -8,12 +20,24 @@ export default {};
     class="main-carousel"
     data-flickity='{ "cellAlign": "left", "contain": false, "wrapAround": true  }'
   >
-    <div class="carousel-cell">Cell 1</div>
-    <div class="carousel-cell">Cell 2</div>
-    <div class="carousel-cell">Cell 3</div>
-    <div class="carousel-cell">Cell 4</div>
-    <div class="carousel-cell">Cell 5</div>
-    <div class="carousel-cell">Cell 6</div>
+    <div class="carousel-cell">
+      <div class="carusel-cell-content zoom">text</div>
+    </div>
+    <div class="carousel-cell">
+      <div class="carusel-cell-content zoom">text</div>
+    </div>
+    <div class="carousel-cell">
+      <div class="carusel-cell-content zoom">text</div>
+    </div>
+    <div class="carousel-cell">
+      <div class="carusel-cell-content zoom">text</div>
+    </div>
+    <div class="carousel-cell">
+      <div class="carusel-cell-content zoom">text</div>
+    </div>
+    <div class="carousel-cell">
+      <div class="carusel-cell-content zoom">text</div>
+    </div>
   </div>
 </template>
 
@@ -27,12 +51,15 @@ export default {};
   margin: 0 auto;
   .carousel-cell {
     margin-right: 40px;
-    line-height: 300px;
-    text-align: center;
+
     width: 300px;
     height: 300px;
-    background: $color-accent;
-    border-radius: 50%;
+    .carusel-cell-content {
+      line-height: 300px;
+      text-align: center;
+      background: $color-accent;
+      border-radius: 50%;
+    }
   }
 }
 </style>

@@ -43,6 +43,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use "../assets/scss/main.scss";
+@use "../assets/scss/partials/variables" as *;
 header {
   // border: 1px solid red;
   width: 100%;
@@ -119,7 +121,7 @@ header {
       top: 40px;
       right: 30px;
       span {
-        background: #fff;
+        background: $color-accent;
         width: 100%;
         height: 3px;
         display: block;
