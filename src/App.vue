@@ -6,6 +6,7 @@ import Poster from "./components/poster.vue";
 import Grid from "./components/grid.vue";
 import Flickity from "./components/flickity.vue";
 import Offers from "./components/offers.vue";
+import Footer from "./components/footer.vue";
 
 export default {
   components: {
@@ -16,18 +17,17 @@ export default {
     Grid,
     Flickity,
     Offers,
+    Footer,
   },
 };
 </script>
 
 <template>
   <Header />
-  <Hero />
-  <Poster />
-  <BgCover />
-  <Grid />
-  <Flickity />
-  <Offers />
+  <div>
+    <router-view></router-view>
+  </div>
+  <Footer />
 </template>
 
 <style lang="scss">

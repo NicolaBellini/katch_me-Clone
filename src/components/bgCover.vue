@@ -3,7 +3,7 @@ export default {};
 </script>
 
 <template>
-  <div class="bg-cover text-white">
+  <div class="bg-cover text-white my_mt3">
     <div class="bg-cover-title">
       <h3 class="big-text">titolo blocco cover</h3>
     </div>

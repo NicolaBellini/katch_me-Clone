@@ -3,7 +3,7 @@ export default {};
 </script>
 
 <template>
-  <div class="poster my_mt">
+  <div class="poster my_mt3">
     <div class="poster-img">
       <img src="../../public/img/jumbo.png" alt="" />
     </div>

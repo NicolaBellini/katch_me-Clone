@@ -19,8 +19,8 @@ export default {
       <img src="../../public/img/logo.png" alt="" />
     </div>
     <ul class="menu" :class="{ menuOpen: isOpen }">
-      <li><a href="">Single</a></li>
-      <li><a href="">Home</a></li>
+      <li><router-link :to="{ name: 'home' }">Home</router-link></li>
+      <li><router-link :to="{ name: 'single' }">Single</router-link></li>
       <li><a href="">Contact</a></li>
     </ul>
     <div class="cta">
