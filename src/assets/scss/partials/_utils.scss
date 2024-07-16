@@ -1,2 +1,11 @@
-@use './mixin' as *;
+@use "./mixin" as *;
 
+.my_mt1 {
+  margin-top: 50px !important;
+}
+.my_mt2 {
+  margin-top: 100px !important;
+}
+.my_mt3 {
+  margin-top: 150px !important;
+}

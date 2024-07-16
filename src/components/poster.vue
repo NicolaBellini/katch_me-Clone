@@ -3,12 +3,12 @@ export default {};
 </script>
 
 <template>
-  <div class="poster">
+  <div class="poster my_mt">
     <div class="poster-img">
       <img src="../../public/img/jumbo.png" alt="" />
     </div>
     <div class="poster-content">
-      <h3>titolo Poster</h3>
+      <h3 class="big-text">titolo Poster</h3>
       <p>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam
         accusantium doloremque facere illo est unde blanditiis asperiores vel,
@@ -23,9 +23,11 @@ export default {};
 .poster {
   display: flex;
   height: 100vh;
-  border: 1px solid red;
+
+  align-items: center;
   .poster-img {
-    width: 60%;
+    width: 65%;
+    height: 100%;
     img {
       width: 100%;
       height: 100%;
@@ -33,7 +35,18 @@ export default {};
     }
   }
   .poster-content {
-    width: 40%;
+    width: 35%;
+    padding: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .poster {
+    flex-wrap: wrap;
+    height: auto;
+    .poster-img,
+    .poster-content {
+      width: 100%;
+    }
   }
 }
 </style>
