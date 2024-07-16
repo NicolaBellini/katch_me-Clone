@@ -1,13 +1,25 @@
 <script>
-export default {};
+import ScrollReveal from "scrollreveal";
+export default {
+  mounted() {
+    ScrollReveal().reveal(".reveal", {
+      origin: "bottom",
+      distance: "50px",
+      duration: 1000,
+      delay: 500,
+      easing: "cubic-bezier(0.215, 0.61, 0.355, 1)",
+      interval: 600,
+    });
+  },
+};
 </script>
 
 <template>
   <div class="poster my_mt3">
-    <div class="poster-img">
+    <div class="poster-img reveal">
       <img src="../../public/img/jumbo.png" alt="" />
     </div>
-    <div class="poster-content">
+    <div class="poster-content reveal">
       <h3 class="big-text">titolo Poster</h3>
       <p>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam

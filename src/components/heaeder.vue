@@ -19,8 +19,16 @@ export default {
       <img src="../../public/img/logo.png" alt="" />
     </div>
     <ul class="menu" :class="{ menuOpen: isOpen }">
-      <li><router-link :to="{ name: 'home' }">Home</router-link></li>
-      <li><router-link :to="{ name: 'single' }">Single</router-link></li>
+      <li>
+        <router-link :to="{ name: 'home' }" @click="toggleMenu"
+          >Home</router-link
+        >
+      </li>
+      <li>
+        <router-link :to="{ name: 'single' }" @click="toggleMenu"
+          >Single</router-link
+        >
+      </li>
       <li><a href="">Contact</a></li>
     </ul>
     <div class="cta">
@@ -38,6 +46,7 @@ export default {
 header {
   // border: 1px solid red;
   width: 100%;
+  z-index: 10;
   max-width: 1350px;
   position: fixed;
   top: 0;
@@ -48,7 +57,6 @@ header {
   align-items: center;
 
   .logo {
-    z-index: 2;
     height: 40px;
     img {
       height: 100%;
@@ -56,6 +64,8 @@ header {
   }
   .menu {
     // border: 1px solid red;
+    // dico come accellerare all' animazione(parte veloce e rallenta alla fine)
+    transition: all 0.7s cubic-bezier(0.215, 0.61, 0.355, 1);
     width: 100%;
     display: flex;
     align-items: center;
