@@ -1,5 +1,5 @@
 <script>
-import BgCover from "../components/hero.vue";
+import BgCover from "../components/bgCover.vue";
 import Hero from "../components/hero.vue";
 import Poster from "../components/poster.vue";
 import Grid from "../components/grid.vue";
