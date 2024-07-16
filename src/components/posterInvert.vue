@@ -16,7 +16,7 @@ export default {
 
 <template>
   <div class="poster my_mt2">
-    <div class="poster-content reveal">
+    <div class="poster-content me-3 reveal">
       <h3 class="big-text">titolo Poster</h3>
       <p>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam

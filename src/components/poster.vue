@@ -19,7 +19,7 @@ export default {
     <div class="poster-img reveal">
       <img src="../../public/img/jumbo.png" alt="" />
     </div>
-    <div class="poster-content reveal">
+    <div class="poster-content me-3 reveal">
       <h3 class="big-text">titolo Poster</h3>
       <p>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam

@@ -17,8 +17,8 @@ export default {
 <template>
   <div class="hero">
     <div class="hero-content reveal">
-      <p class="intro-text">into text</p>
-      <h1 class="big-text">titolo della pagina</h1>
+      <p class="intro-text">Intro text</p>
+      <h1 class="big-text">Titolo della pagina</h1>
       <a href="" class="button">discover me</a>
     </div>
     <video autoplay muted loop id="video-hero">

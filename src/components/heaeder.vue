@@ -77,6 +77,9 @@ header {
     li {
       margin: 0 10px;
       list-style: none;
+      a {
+        color: white;
+      }
     }
   }
   .hamburger {
