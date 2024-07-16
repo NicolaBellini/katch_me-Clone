@@ -50,6 +50,9 @@ header {
   .logo {
     z-index: 2;
     height: 40px;
+    img {
+      height: 100%;
+    }
   }
   .menu {
     // border: 1px solid red;

@@ -1,10 +1,12 @@
 <script>
 import Header from "./components/heaeder.vue";
 import Hero from "./components/hero.vue";
+import Poster from "./components/poster.vue";
 export default {
   components: {
     Header,
     Hero,
+    Poster,
   },
 };
 </script>
@@ -12,6 +14,7 @@ export default {
 <template>
   <Header />
   <Hero />
+  <Poster />
 </template>
 
 <style lang="scss">
